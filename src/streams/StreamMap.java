@@ -13,7 +13,7 @@ public class StreamMap {
         numberList.add(33);
         System.out.println("Before :"+numberList);
         // New list to add 1 to each element
-        List<Integer> filteredList = numberList.stream().map(e->e+1).collect(Collectors.toList());
-        System.out.println("After filtering :"+filteredList);
+        List<Integer> mappedList = numberList.stream().map(e->e+1).collect(Collectors.toList());
+        System.out.println("After filtering :"+mappedList);
     }
 }
